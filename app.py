@@ -35,7 +35,7 @@ st.markdown("""
     
     /* ====== Header ====== */
     h1, h2, h3, h4, h5, h6 {
-        color: #212529 !important;
+        color: #f2f4f5 !important;
     }
     
     /* ====== Input & Form Controls ====== */
