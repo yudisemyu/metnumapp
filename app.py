@@ -328,28 +328,28 @@ with tab4:
         </p>
         
         <h4>🔍 Prinsip Kerja:</h4>
-
+        <p>
             <li>Memilih interval [a, b] dimana f(a) × f(b) < 0</li>
             <li>Menghitung titik c menggunakan rumus interpolasi linier</li>
             <li>Memperbarui interval berdasarkan tanda f(c)</li>
             <li>Mengulangi hingga konvergen</li>
-
+        </p>
         
         <h4>📐 Rumus:</h4>
         <p>c = b - f(b) × (b - a) / (f(b) - f(a))</p>
         
         <h4>✅ Kelebihan:</h4>
-        <ul>
+        <p>
             <li>Selalu konvergen jika kondisi awal terpenuhi</li>
             <li>Lebih cepat dari metode biseksi</li>
             <li>Mudah diimplementasikan</li>
-        </ul>
+        </p>
         
         <h4>⚠️ Kekurangan:</h4>
-        <ul>
+        <p>
             <li>Konvergensi lebih lambat dari Newton-Raphson</li>
             <li>Membutuhkan interval awal dengan perubahan tanda</li>
-        </ul>
+        </p>
     </div>
     """, unsafe_allow_html=True)
 
