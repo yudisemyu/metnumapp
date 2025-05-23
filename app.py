@@ -319,39 +319,36 @@ def get_csv_download_link(df, filename):
 tab1, tab2, tab3, tab4 = st.tabs(["🔍 Perhitungan", "📊 Visualisasi", "📖 Penjelasan", "ℹ️ Info Metode"])
 
 with tab4:
+    st.markdown("### 🎓 Tentang Metode Regula Falsi")
+    
+    st.info("""
+    Metode Regula Falsi (False Position Method) adalah metode numerik untuk mencari akar persamaan non-linier. 
+    Metode ini menggunakan pendekatan **interpolasi linier** antara dua titik di mana fungsi memiliki tanda berlawanan.
+    """)
+    
+    st.markdown("#### 🔍 Prinsip Kerja:")
     st.markdown("""
-    <div class='info-box'>
-        <h3>🎓 Tentang Metode Regula Falsi</h3>
-        <p>
-            Metode Regula Falsi (False Position Method) adalah metode numerik untuk mencari akar persamaan non-linier. 
-            Metode ini menggunakan pendekatan <strong>interpolasi linier</strong> antara dua titik di mana fungsi memiliki tanda berlawanan.
-        </p>
-        
-        <h4>🔍 Prinsip Kerja:</h4>
-        <ul>
-            <li>Memilih interval [a, b] dimana f(a) × f(b) &lt; 0</li>
-            <li>Menghitung titik c menggunakan rumus interpolasi linier</li>
-            <li>Memperbarui interval berdasarkan tanda f(c)</li>
-            <li>Mengulangi hingga konvergen</li>
-        </ul>
-        
-        <h4>📐 Rumus:</h4>
-        <p><strong>c = b - f(b) × (b - a) / (f(b) - f(a))</strong></p>
-        
-        <h4>✅ Kelebihan:</h4>
-        <ul>
-            <li>Selalu konvergen jika kondisi awal terpenuhi</li>
-            <li>Lebih cepat dari metode biseksi</li>
-            <li>Mudah diimplementasikan</li>
-        </ul>
-        
-        <h4>⚠️ Kekurangan:</h4>
-        <ul>
-            <li>Konvergensi lebih lambat dari Newton-Raphson</li>
-            <li>Membutuhkan interval awal dengan perubahan tanda</li>
-        </ul>
-    </div>
-    """, unsafe_allow_html=True)
+    - Memilih interval [a, b] dimana f(a) × f(b) < 0
+    - Menghitung titik c menggunakan rumus interpolasi linier  
+    - Memperbarui interval berdasarkan tanda f(c)
+    - Mengulangi hingga konvergen
+    """)
+    
+    st.markdown("#### 📐 Rumus:")
+    st.latex(r"c = b - f(b) \times \frac{(b - a)}{(f(b) - f(a))}")
+    
+    st.markdown("#### ✅ Kelebihan:")
+    st.markdown("""
+    - Selalu konvergen jika kondisi awal terpenuhi
+    - Lebih cepat dari metode biseksi
+    - Mudah diimplementasikan
+    """)
+    
+    st.markdown("#### ⚠️ Kekurangan:")
+    st.markdown("""
+    - Konvergensi lebih lambat dari Newton-Raphson
+    - Membutuhkan interval awal dengan perubahan tanda
+    """)
 
 if start:
     with tab1:
