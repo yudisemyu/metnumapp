@@ -19,118 +19,128 @@ st.set_page_config(
 # Custom CSS untuk styling yang menarik
 st.markdown("""
 <style>
-    /* Background utama aplikasi */
+/* ====== Base & Background ====== */
     html, body, .stApp {
-        background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%) !important;
+        background: linear-gradient(135deg, #f7f8fa, #ffffff) !important;
         color: #2c3e50 !important;
+        font-family: 'Segoe UI', sans-serif;
     }
     
-    /* Sidebar */
+    /* ====== Sidebar ====== */
     .sidebar .sidebar-content {
-        background: linear-gradient(180deg, #ffffff, #f5f7fa) !important;
+        background: #ffffff !important;
         color: #2c3e50 !important;
+        border-right: 1px solid #eee;
     }
     
-    /* Header utama */
+    /* ====== Header ====== */
     h1, h2, h3, h4, h5, h6 {
-        color: #2c3e50 !important;
+        color: #212529 !important;
     }
     
-    /* Input dan tombol */
+    /* ====== Input & Form Controls ====== */
     input, textarea, select, button {
         background-color: #ffffff !important;
         color: #2c3e50 !important;
         border: 1px solid #ccc !important;
+        border-radius: 8px !important;
     }
     
-    /* Widget container */
+    /* ====== Main container ====== */
     .block-container {
+        padding: 2rem 2rem;
         background-color: transparent !important;
     }
     
-    /* Komponen metric & data */
+    /* ====== Metric Card ====== */
     [data-testid="metric-container"] {
         background-color: #ffffff !important;
-        border-radius: 0.5rem;
+        border-radius: 12px;
         padding: 1rem;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
     
-    /* Box sukses */
+    /* ====== Notification Boxes ====== */
     .success-box {
-        background: linear-gradient(90deg, #A8E6CF, #DCEDC1) !important;
-        color: #2e7d32 !important;
+        background: #d1fae5 !important;
+        color: #065f46 !important;
+        border-left: 5px solid #10b981;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem 0;
     }
     
-    /* Box error */
     .error-box {
-        background: linear-gradient(90deg, #FF8A80, #FF5252) !important;
-        color: white !important;
+        background: #fee2e2 !important;
+        color: #991b1b !important;
+        border-left: 5px solid #ef4444;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem 0;
     }
     
-    /* Box info */
     .info-box {
-        background: linear-gradient(90deg, #B2EBF2, #81D4FA) !important;
-        color: #01579B !important;
+        background: #e0f2fe !important;
+        color: #0369a1 !important;
+        border-left: 5px solid #0ea5e9;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem 0;
     }
     
-    /* Step card */
+    /* ====== Step Card (iterasi) ====== */
     .step-card {
-        background: linear-gradient(135deg, #FFD3A5 0%, #FD6585 100%) !important;
-        color: white !important;
+        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%) !important;
+        color: #1e293b !important;
+        border-radius: 12px;
+        padding: 1rem;
+        margin: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
     }
     
-    /* Tab aktif dan garis bawah */
+    /* ====== Tabs ====== */
     .stTabs [data-baseweb="tab-list"] {
-        background-color: #ffffff !important;
-    }
-    .stTabs [data-baseweb="tab"] {
-        color: #2c3e50 !important;
-    }
-    .stTabs [aria-selected="true"] {
-        border-bottom: 3px solid #ff5252 !important;
+        background-color: transparent !important;
     }
     
-    /* Scrollbar terang */
+    .stTabs [data-baseweb="tab"] {
+        color: #4b5563 !important;
+        font-weight: 500;
+        background-color: #f9fafb !important;
+        padding: 0.5rem 1rem;
+        margin-right: 0.25rem;
+        border-radius: 6px 6px 0 0;
+    }
+    
+    .stTabs [aria-selected="true"] {
+        background-color: #ffffff !important;
+        color: #1f2937 !important;
+        border-bottom: 3px solid #3b82f6 !important;
+        font-weight: 600;
+    }
+    
+    /* ====== Scrollbar ====== */
     ::-webkit-scrollbar {
         width: 8px;
     }
     ::-webkit-scrollbar-thumb {
-        background: #bbb;
+        background: #cbd5e1;
         border-radius: 8px;
     }
-    /* Ubah teks tab aktif dan tab lainnya */
-    .stTabs [data-baseweb="tab"] {
-        color: #333 !important;
-        background-color: #ffffff !important;
-        font-weight: 500;
-    }
     
-    .stTabs [aria-selected="true"] {
-        color: #d32f2f !important;
-        font-weight: 600;
-        border-bottom: 3px solid #f44336 !important;
-    }
-    
-    /* Label di sidebar (misal: Masukkan fungsi f(x)) */
-    label, .css-1l269bu, .css-9s5bis {
-        color: #2c3e50 !important;
-        font-weight: 500;
-    }
-    
-    /* Ikon sidebar dan teks */
-    span.css-10trblm, .css-1v0mbdj, .css-q8sbsg {
-        color: #2c3e50 !important;
-    }
-    
-    /* Tooltip help (?) */
+    /* ====== Tooltip / Help (?) ====== */
     .css-1cpxqw2 {
-        filter: brightness(0.1) !important;
+        filter: brightness(0.4) !important;
     }
-
     
+    /* ====== Icon & Label in Sidebar ====== */
+    label, .css-1v0mbdj, .css-q8sbsg {
+        color: #1e293b !important;
+        font-weight: 500;
+    }
 </style>
 """, unsafe_allow_html=True)
+
 
 # Inisialisasi symbol
 x = symbols('x')
