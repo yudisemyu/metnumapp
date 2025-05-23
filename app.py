@@ -34,13 +34,12 @@ st.markdown("""
     }
     
     /* ====== Header ====== */
-    h1{
-        color: #f2f4f5 !important;
+    h1, .css-10trblm, .css-1v0mbdj {
+        color: #1f2937 !important; /* dark gray */
     }
     h2, h3, h4, h5, h6 {
-        color: #01080f !important;
+        color: #374151 !important;
     }
-    
     /* ====== Input & Form Controls ====== */
     input, textarea, select, button {
         background-color: #ffffff !important;
