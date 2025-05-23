@@ -116,7 +116,7 @@ st.markdown("""
     
     .stTabs [aria-selected="true"] {
         background-color: #ffffff !important;
-        color: #1f2937 !important;
+        color: #065f46 !important;
         border-bottom: 3px solid #3b82f6 !important;
         font-weight: 600;
     }
