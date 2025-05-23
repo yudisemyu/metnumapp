@@ -328,12 +328,12 @@ with tab4:
         </p>
         
         <h4>🔍 Prinsip Kerja:</h4>
-        <ul>
+
             <li>Memilih interval [a, b] dimana f(a) × f(b) < 0</li>
             <li>Menghitung titik c menggunakan rumus interpolasi linier</li>
             <li>Memperbarui interval berdasarkan tanda f(c)</li>
             <li>Mengulangi hingga konvergen</li>
-        </ul>
+
         
         <h4>📐 Rumus:</h4>
         <p>c = b - f(b) × (b - a) / (f(b) - f(a))</p>
@@ -573,7 +573,6 @@ if start:
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #6c757d; padding: 1rem;'>
-    <p>🔬 <strong>Kalkulator Regula Falsi Advanced</strong> | Dibuat dengan ❤️ menggunakan Streamlit</p>
-    <p>📧 Untuk pertanyaan dan saran, silakan hubungi developer</p>
+    <p>🔬 <strong>Kalkulator Regula Falsi Advanced</strong> | Dibuat oleh kelompok 6</p>
 </div>
 """, unsafe_allow_html=True)
