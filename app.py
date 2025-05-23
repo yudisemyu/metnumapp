@@ -82,8 +82,8 @@ st.markdown("""
     }
     
     .info-box {
-        background: #e0f2fe !important;
-        color: #0369a1 !important;
+        background: #d1fae5 !important;
+        color: #065f46 !important;
         border-left: 5px solid #0ea5e9;
         border-radius: 10px;
         padding: 1rem;
@@ -92,8 +92,8 @@ st.markdown("""
     
     /* ====== Step Card (iterasi) ====== */
     .step-card {
-        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%) !important;
-        color: #1e293b !important;
+        background: #d1fae5 !important;
+        color: #065f46 !important;
         border-radius: 12px;
         padding: 1rem;
         margin: 1rem 0;
