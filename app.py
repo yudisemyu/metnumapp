@@ -24,19 +24,19 @@ st.markdown("""
     }
     
     .stApp {
-        background: linear-gradient(135deg, #1e1e1e 0%, #3c3c3c 100%);
+        background: linear-gradient(135deg, #f9f9f9 0%, #e6ecf0 100%);
     }
     
     .sidebar .sidebar-content {
-        background: linear-gradient(180deg, #2C3E50 0%, #34495E 100%);
-        color: white;
+        background: linear-gradient(180deg, #ffffff, #f5f7fa);
+        color:#2c3e50;
     }
     
     .success-box {
         padding: 1rem;
         border-radius: 0.5rem;
-        background: linear-gradient(90deg, #00C851, #007E33);
-        color: white;
+        background: linear-gradient(90deg, #A8E6CF, #DCEDC1);
+        color: #2e7d32;
         margin: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         animation: slideIn 0.5s ease-out;
@@ -45,7 +45,7 @@ st.markdown("""
     .error-box {
         padding: 1rem;
         border-radius: 0.5rem;
-        background: linear-gradient(90deg, #ff4444, #cc0000);
+        background: linear-gradient90deg, #FF8A80, #FF5252);
         color: white;
         margin: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -55,8 +55,8 @@ st.markdown("""
     .info-box {
         padding: 1rem;
         border-radius: 0.5rem;
-        background: linear-gradient(90deg, #33b5e5, #0099cc);
-        color: white;
+        background: linear-gradient(90deg, #B2EBF2, #81D4FA);
+        color: #01579B;
         margin: 1rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
@@ -81,7 +81,7 @@ st.markdown("""
     }
     
     .step-card {
-        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        background: linear-gradient(135deg, #FFD3A5 0%, #FD6585 100%);
         color: white;
         padding: 1rem;
         border-radius: 0.5rem;
