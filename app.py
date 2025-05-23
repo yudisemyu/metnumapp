@@ -19,74 +19,85 @@ st.set_page_config(
 # Custom CSS untuk styling yang menarik
 st.markdown("""
 <style>
-    .main {
-        padding-top: 2rem;
+    /* Background utama aplikasi */
+    html, body, .stApp {
+        background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%) !important;
+        color: #2c3e50 !important;
     }
     
-    .stApp {
-        background: linear-gradient(135deg, #f9f9f9 0%, #e6ecf0 100%);
-    }
-    
+    /* Sidebar */
     .sidebar .sidebar-content {
-        background: linear-gradient(180deg, #ffffff, #f5f7fa);
-        color:#2c3e50;
+        background: linear-gradient(180deg, #ffffff, #f5f7fa) !important;
+        color: #2c3e50 !important;
     }
     
+    /* Header utama */
+    h1, h2, h3, h4, h5, h6 {
+        color: #2c3e50 !important;
+    }
+    
+    /* Input dan tombol */
+    input, textarea, select, button {
+        background-color: #ffffff !important;
+        color: #2c3e50 !important;
+        border: 1px solid #ccc !important;
+    }
+    
+    /* Widget container */
+    .block-container {
+        background-color: transparent !important;
+    }
+    
+    /* Komponen metric & data */
+    [data-testid="metric-container"] {
+        background-color: #ffffff !important;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    
+    /* Box sukses */
     .success-box {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        background: linear-gradient(90deg, #A8E6CF, #DCEDC1);
-        color: #2e7d32;
-        margin: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        animation: slideIn 0.5s ease-out;
+        background: linear-gradient(90deg, #A8E6CF, #DCEDC1) !important;
+        color: #2e7d32 !important;
     }
     
+    /* Box error */
     .error-box {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        background: linear-gradient90deg, #FF8A80, #FF5252);
-        color: white;
-        margin: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        animation: shake 0.5s ease-in-out;
+        background: linear-gradient(90deg, #FF8A80, #FF5252) !important;
+        color: white !important;
     }
     
+    /* Box info */
     .info-box {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        background: linear-gradient(90deg, #B2EBF2, #81D4FA);
-        color: #01579B;
-        margin: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(90deg, #B2EBF2, #81D4FA) !important;
+        color: #01579B !important;
     }
     
-    @keyframes slideIn {
-        from { opacity: 0; transform: translateY(-20px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-    
-    @keyframes shake {
-        0%, 20%, 40%, 60%, 80% { transform: translateX(0); }
-        10%, 30%, 50%, 70% { transform: translateX(-5px); }
-        15%, 35%, 55%, 75% { transform: translateX(5px); }
-    }
-    
-    .metric-card {
-        background: white;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        margin: 0.5rem 0;
-    }
-    
+    /* Step card */
     .step-card {
-        background: linear-gradient(135deg, #FFD3A5 0%, #FD6585 100%);
-        color: white;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        margin: 0.5rem 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #FFD3A5 0%, #FD6585 100%) !important;
+        color: white !important;
+    }
+    
+    /* Tab aktif dan garis bawah */
+    .stTabs [data-baseweb="tab-list"] {
+        background-color: #ffffff !important;
+    }
+    .stTabs [data-baseweb="tab"] {
+        color: #2c3e50 !important;
+    }
+    .stTabs [aria-selected="true"] {
+        border-bottom: 3px solid #ff5252 !important;
+    }
+    
+    /* Scrollbar terang */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #bbb;
+        border-radius: 8px;
     }
 </style>
 """, unsafe_allow_html=True)
