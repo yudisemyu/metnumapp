@@ -162,7 +162,7 @@ st.markdown("""
 # Sidebar dengan styling yang lebih menarik
 with st.sidebar:
     st.markdown("""
-    <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;'>
+    <div style='background: linear-gradient(90deg, #2de0bc, #f5e000); padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;'>
         <h1 style='color: white; text-align: center; margin: 0;'>🎯 Input Parameter</h1>
     </div>
     """, unsafe_allow_html=True)
