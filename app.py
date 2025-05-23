@@ -99,6 +99,36 @@ st.markdown("""
         background: #bbb;
         border-radius: 8px;
     }
+    /* Ubah teks tab aktif dan tab lainnya */
+    .stTabs [data-baseweb="tab"] {
+        color: #333 !important;
+        background-color: #ffffff !important;
+        font-weight: 500;
+    }
+    
+    .stTabs [aria-selected="true"] {
+        color: #d32f2f !important;
+        font-weight: 600;
+        border-bottom: 3px solid #f44336 !important;
+    }
+    
+    /* Label di sidebar (misal: Masukkan fungsi f(x)) */
+    label, .css-1l269bu, .css-9s5bis {
+        color: #2c3e50 !important;
+        font-weight: 500;
+    }
+    
+    /* Ikon sidebar dan teks */
+    span.css-10trblm, .css-1v0mbdj, .css-q8sbsg {
+        color: #2c3e50 !important;
+    }
+    
+    /* Tooltip help (?) */
+    .css-1cpxqw2 {
+        filter: brightness(0.1) !important;
+    }
+
+    
 </style>
 """, unsafe_allow_html=True)
 
