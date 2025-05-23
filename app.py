@@ -319,23 +319,23 @@ def get_csv_download_link(df, filename):
 tab1, tab2, tab3, tab4 = st.tabs(["🔍 Perhitungan", "📊 Visualisasi", "📖 Penjelasan", "ℹ️ Info Metode"])
 
 with tab4:
-    st.markdown(f"""
+    st.markdown("""
     <div class='info-box'>
         <h3>🎓 Tentang Metode Regula Falsi</h3>
         <p>
         Metode Regula Falsi (False Position Method) adalah metode numerik untuk mencari akar persamaan non-linier. 
         Metode ini menggunakan pendekatan <strong>interpolasi linier</strong> antara dua titik di mana fungsi memiliki tanda berlawanan.
         </p>
-        
-        <h4>🔍 Prinsip Kerja:</h4>
-        <ul>
+    
+        <h3>🔍 Prinsip Kerja:</h3>
+        <p>
             <li>Memilih interval [a, b] dimana f(a) × f(b) < 0</li>
             <li>Menghitung titik c menggunakan rumus interpolasi linier</li>
             <li>Memperbarui interval berdasarkan tanda f(c)</li>
             <li>Mengulangi hingga konvergen</li>
-        </ul>
+        </p>
         
-        <h4>📐 Rumus:</h4>
+        <h3>📐 Rumus:</h3>
         <p>c = b - f(b) × (b - a) / (f(b) - f(a))</p>
         
         <h4>✅ Kelebihan:</h4>
