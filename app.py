@@ -35,7 +35,7 @@ st.markdown("""
     
     /* ====== Header ====== */
     h1, .css-10trblm, .css-1v0mbdj {
-        color: #1f2937 !important; /* dark gray */
+        color: #ffffff !important; /* dark gray */
     }
     h2, h3, h4, h5, h6 {
         color: #374151 !important;
