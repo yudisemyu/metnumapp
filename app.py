@@ -325,9 +325,11 @@ with tab4:
         <p>
         Metode Regula Falsi (False Position Method) adalah metode numerik untuk mencari akar persamaan non-linier. 
         Metode ini menggunakan pendekatan <strong>interpolasi linier</strong> antara dua titik di mana fungsi memiliki tanda berlawanan.
+
+        <h4>🔍 Prinsip Kerja:</h4>
         </p>
     
-        <h3>🔍 Prinsip Kerja:</h3>
+        <h4>🔍 Prinsip Kerja:</h4>
         <p>
             <li>Memilih interval [a, b] dimana f(a) × f(b) < 0</li>
             <li>Menghitung titik c menggunakan rumus interpolasi linier</li>
@@ -335,7 +337,7 @@ with tab4:
             <li>Mengulangi hingga konvergen</li>
         </p>
         
-        <h3>📐 Rumus:</h3>
+        <h4>📐 Rumus:</h4>
         <p>c = b - f(b) × (b - a) / (f(b) - f(a))</p>
         
         <h4>✅ Kelebihan:</h4>
