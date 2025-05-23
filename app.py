@@ -35,7 +35,7 @@ st.markdown("""
     
     /* ====== Header ====== */
     h1, .css-10trblm, .css-1v0mbdj {
-        color: #c5cbd1 !important; /* dark gray */
+        color: #ffffff !important; /* dark gray */
     }
     h2, h3, h4, h5, h6 {
         color: #374151 !important;
@@ -149,7 +149,7 @@ x = symbols('x')
 
 # Header dengan animasi
 st.markdown("""
-<div style='text-align: center; padding: 2rem 0; background: linear-gradient(90deg, #2de0bc, #0025f5); border-radius: 1rem; margin-bottom: 2rem; box-shadow: 0 8px 16px rgba(0,0,0,0.2);'>
+<div style='text-align: center; padding: 2rem 0; background: linear-gradient(90deg, #2de0bc, #f5e000); border-radius: 1rem; margin-bottom: 2rem; box-shadow: 0 8px 16px rgba(0,0,0,0.2);'>
     <h1 style='color: white; font-size: 3rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);'>
         🔬 Kalkulator Regula Falsi Advanced
     </h1>
