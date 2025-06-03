@@ -151,7 +151,7 @@ x = symbols('x')
 st.markdown("""
 <div style='text-align: center; padding: 2rem 0; background: linear-gradient(90deg, #2de0bc, #f5e000); border-radius: 1rem; margin-bottom: 2rem; box-shadow: 0 8px 16px rgba(0,0,0,0.2);'>
     <h1 style='color: white; font-size: 3rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);'>
-        🔬 Kalkulator Regula Falsi Advanced
+        🔬 Kalkulator Regula Falsi
     </h1>
     <p style='color: #f8f9fa; font-size: 1.2rem; margin: 0.5rem 0 0 0;'>
         Metode Numerik untuk Pencarian Akar Persamaan Non-Linier
@@ -570,6 +570,6 @@ if start:
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #6c757d; padding: 1rem;'>
-    <p>🔬 <strong>Kalkulator Regula Falsi Advanced</strong> | Dibuat oleh kelompok 6</p>
+    <p>🔬 <strong>Kalkulator Regula Falsi</strong> | Dibuat oleh kelompok 6</p>
 </div>
 """, unsafe_allow_html=True)
