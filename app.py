@@ -11,7 +11,7 @@ from datetime import datetime
 
 # Konfigurasi halaman
 st.set_page_config(
-    page_title="🔬 Kalkulator Regula Falsi Advanced", 
+    page_title="🔬 Kalkulator Regula Falsi", 
     layout="wide",
     initial_sidebar_state="expanded"
 )
