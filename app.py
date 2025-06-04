@@ -335,7 +335,7 @@ with tab4:
     """)
     
     st.markdown("#### 📐 Rumus:")
-    st.latex(r"c = b - f(b) \times \frac{(b - a)}{(f(b) - f(a))}")
+    st.latex(r"c = b - \frac{f(b)(b - a)}{f(b) - f(a)}")
     
     st.markdown("#### ✅ Kelebihan:")
     st.markdown("""
